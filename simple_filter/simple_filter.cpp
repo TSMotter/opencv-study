@@ -13,7 +13,7 @@ int main()
 
     int     new_w        = 500;
     float   aspect_ratio = static_cast<float>(img.cols) / static_cast<float>(img.rows);
-    int     new_h = static_cast<int>(new_w / aspect_ratio);
+    int     new_h        = static_cast<int>(new_w / aspect_ratio);
     cv::Mat resized_img;
     cv::resize(img, resized_img, cv::Size(new_w, new_h));
 
