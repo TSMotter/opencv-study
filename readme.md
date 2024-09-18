@@ -1,6 +1,6 @@
-# CPP study repository
+# opencv study repository
 
-- This is a study/sandbox C++ repository
+- This is a study/sandbox opencv repository
 
 
 ## How to operate the repository
