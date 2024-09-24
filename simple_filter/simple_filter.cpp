@@ -3,7 +3,7 @@
 
 int main()
 {
-    std::string img_path = "images/flower.jpg";
+    std::string img_path = "images/flower.png";
     cv::Mat     img      = cv::imread(img_path, cv::IMREAD_COLOR);
     if (img.empty())
     {
