@@ -1,16 +1,15 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-int main()
+int main(int argc, char** argv)
 {
-    std::string img_path = "images/pool_table.png";
-    cv::Mat     img      = cv::imread(img_path, cv::IMREAD_COLOR);
-    if (img.empty())
+    cv::Mat img;
+    if (argc != 2 || !(img = cv::imread(argv[1], cv::IMREAD_COLOR)).data)
     {
         std::cout << "Could not load img!" << std::endl;
         return -1;
     }
-    cv::imshow("Display window", img);
+    cv::imshow("img", img);
     cv::waitKey(0);
     return 0;
 }
